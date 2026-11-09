@@ -1,0 +1,27 @@
+- snd/amb_fridge.mp3: File:Inside of refrigerator.ogg / stephan / Public domain
+- snd/amb_clock.mp3: File:LA2 kitchen clock.ogg / LA2 / Public domain
+- snd/pop1.mp3: 3 Pop Sounds / wubitog / CC0
+- snd/pop2.mp3: 3 Pop Sounds / wubitog / CC0
+- snd/pop3.mp3: 3 Pop Sounds / wubitog / CC0
+- snd/close1.mp3: Interface Sounds / Kenney / CC0
+- snd/close2.mp3: Interface Sounds / Kenney / CC0
+- snd/close3.mp3: Interface Sounds / Kenney / CC0
+- snd/err1.mp3: Interface Sounds / Kenney / CC0
+- snd/err2.mp3: Interface Sounds / Kenney / CC0
+- snd/glitch1.mp3: Interface Sounds / Kenney / CC0
+- snd/glitch2.mp3: Interface Sounds / Kenney / CC0
+- snd/zoom.mp3: Interface Sounds / Kenney / CC0
+- snd/ok.mp3: Interface Sounds / Kenney / CC0
+- snd/coin1.mp3: 50 RPG sound effects / Kenney / CC0
+- snd/coin2.mp3: 50 RPG sound effects / Kenney / CC0
+- snd/coin3.mp3: Coin Drop / Vinrax / CC0
+- snd/swish1.mp3: Swishes Sound Pack / artisticdude / CC0
+- snd/swish2.mp3: Swishes Sound Pack / artisticdude / CC0
+- snd/adjingle1.mp3: 85 Short music jingles / Kenney / CC0
+- snd/adjingle2.mp3: 85 Short music jingles / Kenney / CC0
+- snd/sax.mp3: 85 Short music jingles / Kenney / CC0
+- snd/clear.mp3: 85 Short music jingles / Kenney / CC0
+- snd/result.mp3: 85 Short music jingles / Kenney / CC0
+- snd/fail.mp3: 85 Short music jingles / Kenney / CC0
+- snd/paper.mp3: 100 CC0 SFX / rubberduck / CC0
+- snd/tick.mp3: Interface Sounds / Kenney / CC0
