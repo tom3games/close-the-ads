@@ -49,7 +49,7 @@ a{-webkit-tap-highlight-color:transparent}
 #corner svg,.dockB svg{width:20px;height:20px}
 
 /* タイトル: 手に持ったスマホ */
-#vTitle .wrap{display:flex;flex-direction:column;align-items:center;padding:calc(58px + env(safe-area-inset-top)) 16px calc(18px + env(safe-area-inset-bottom))}
+#vTitle .wrap{display:flex;flex-direction:column;align-items:center;padding:calc(58px + env(safe-area-inset-top)) 16px calc(18px + calc(env(safe-area-inset-bottom) + var(--inapp-bot,0px)))}
 #tHead{text-align:center;color:#f7efe4}
 #tHead h1{font-family:var(--pop);font-weight:400;font-size:min(10.5vw,44px);line-height:1.15;letter-spacing:.02em;text-shadow:0 3px 0 #000,0 0 18px rgba(255,200,80,.25)}
 #tHead h1 em{font-style:normal;color:#ffd84a}
@@ -221,7 +221,7 @@ a{-webkit-tap-highlight-color:transparent}
 #phone.lens #lensRing{opacity:1}
 
 /* 下の操作列 */
-#dock{flex:none;height:calc(62px + env(safe-area-inset-bottom));padding:0 12px env(safe-area-inset-bottom);background:#fff;border-top:1px solid var(--line);display:flex;align-items:center;gap:10px;position:relative;z-index:30}
+#dock{flex:none;height:calc(62px + calc(env(safe-area-inset-bottom) + var(--inapp-bot,0px)));padding:0 12px calc(env(safe-area-inset-bottom) + var(--inapp-bot,0px));background:#fff;border-top:1px solid var(--line);display:flex;align-items:center;gap:10px;position:relative;z-index:30}
 .dockB{min-width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:6px;color:#222;font:700 15px/1 var(--sys)}
 #bLens{background:#eef6ef;color:#1f6b33;padding:0 12px;border:1.5px solid #9cd3aa}
 #bLens svg{width:24px;height:24px}
@@ -233,7 +233,7 @@ a{-webkit-tap-highlight-color:transparent}
 #dots i.ok{background:#1f8a3a}#dots i.ng{background:#d6452b}
 #bMute2{background:#f2f3f5}
 
-#toast{position:absolute;left:50%;bottom:calc(76px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:45;background:rgba(18,18,20,.9);color:#fff;font:700 16px/1.3 var(--sys);padding:10px 16px;border-radius:10px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .15s}
+#toast{position:absolute;left:50%;bottom:calc(76px + calc(env(safe-area-inset-bottom) + var(--inapp-bot,0px)));transform:translateX(-50%);z-index:45;background:rgba(18,18,20,.9);color:#fff;font:700 16px/1.3 var(--sys);padding:10px 16px;border-radius:10px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .15s}
 #toast.on{opacity:1}
 #finger{position:absolute;z-index:46;width:46px;height:46px;pointer-events:none;animation:poke .8s ease-in-out infinite;filter:drop-shadow(0 3px 3px rgba(0,0,0,.4))}
 @keyframes poke{50%{transform:translate(5px,8px) scale(.92)}}
@@ -295,7 +295,7 @@ a{-webkit-tap-highlight-color:transparent}
 @keyframes blink{50%{opacity:.2}}
 
 /* 結果: ご利用明細 */
-#vEnd .wrap{display:flex;flex-direction:column;align-items:center;gap:8px;padding:calc(58px + env(safe-area-inset-top)) 14px calc(8px + env(safe-area-inset-bottom))}
+#vEnd .wrap{display:flex;flex-direction:column;align-items:center;gap:8px;padding:calc(58px + env(safe-area-inset-top)) 14px calc(8px + calc(env(safe-area-inset-bottom) + var(--inapp-bot,0px)))}
 #billBox{flex:1;min-height:0;width:100%;display:flex;justify-content:center;align-items:flex-start}
 #bill{position:relative;width:min(100%,400px);max-height:100%;background:var(--paper);color:#222;font-family:var(--mono);padding:16px 16px 18px;box-shadow:0 14px 30px rgba(0,0,0,.5);transform:rotate(-1.2deg);display:flex;flex-direction:column;gap:6px;overflow:hidden}
 #bill::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:repeating-linear-gradient(90deg,#d8d3c8 0 6px,transparent 6px 12px)}
@@ -326,7 +326,7 @@ a{-webkit-tap-highlight-color:transparent}
 #bAgain{min-height:52px;background:#ffd23a;color:#2a1a08;border:0;font-family:var(--pop);font-weight:400;font-size:18px;box-shadow:0 4px 0 #b8860b}
 #card{display:none}
 
-.ovl{position:fixed;inset:0;z-index:70;background:#1d1814;display:flex;flex-direction:column;padding:calc(58px + env(safe-area-inset-top)) 16px calc(14px + env(safe-area-inset-bottom));color:#f4ebdf}
+.ovl{position:fixed;inset:0;z-index:70;background:#1d1814;display:flex;flex-direction:column;padding:calc(58px + env(safe-area-inset-top)) 16px calc(14px + calc(env(safe-area-inset-bottom) + var(--inapp-bot,0px)));color:#f4ebdf}
 .ovl .in{max-width:460px;width:100%;margin:0 auto;display:flex;flex-direction:column;height:100%;min-height:0}
 .ovl h2{font-family:var(--pop);font-weight:400;font-size:22px;margin-bottom:12px}
 #howBody{flex:1;min-height:0;overflow:hidden;display:flex;flex-direction:column;gap:12px;font-size:15px;line-height:1.6}
@@ -439,6 +439,6 @@ a{-webkit-tap-highlight-color:transparent}
 <script src="sfx.js?v=2"></script>
 <script src="data.js?v=1"></script>
 <script src="game.js?v=1"></script>
-<script src="support.js?v=1" data-ja="缶コーヒー" data-en="a can of coffee"></script>
+<script src="support.js?v=2" data-ja="缶コーヒー" data-en="a can of coffee"></script>
 </body>
 </html>
